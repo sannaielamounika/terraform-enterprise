@@ -1,0 +1,13 @@
+project_name         = "speshway"
+environment          = "test"
+region               = "us-east-1"
+vpc_cidr             = "10.2.0.0/16"
+enable_vpc_endpoints = true
+public_subnet_cidrs  = ["10.2.1.0/24", "10.2.2.0/24"]
+private_subnet_cidrs = ["10.2.11.0/24", "10.2.12.0/24"]
+nat_gateway_count    = 1
+repository_names     = ["frontend-repo", "backend-repo", "auth-repo"]
+node_instance_types  = ["t3.medium"]
+desired_size         = 2
+min_size             = 1
+max_size             = 4
